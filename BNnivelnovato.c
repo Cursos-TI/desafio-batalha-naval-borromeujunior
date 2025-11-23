@@ -4,6 +4,7 @@ int main() {
 
     int tabuleiro [10] [10] = {0}; // Tabuleiro bidimensional inicializado com 0
     int i, j;
+    
     //Código que posiciona um navio na posição horizontal (Tam: 3 células)
     //Posição escolhida: Linha 2 / Índice: 1
 
