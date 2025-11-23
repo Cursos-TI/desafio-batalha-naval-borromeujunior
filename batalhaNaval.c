@@ -31,9 +31,15 @@ int main() {
         tabuleiro[9 - i][0 + i] = 3;
     }
 
-    //Exibe o tabuleiro com os navios posicionados
-    printf("\nTabuleiro:\n");
+  // Exibe o tabuleiro com letras nas colunas e números nas linhas
+    printf("\n   "); // espaço inicial para alinhar
+    for (int j = 0; j < COLUNAS; j++) {
+        printf("%c ", 'A' + j); // imprime letras A–J
+    }
+    printf("\n");
+
     for (int i = 0; i < LINHAS; i++) {
+        printf("%2d ", i + 1); // imprime números 1–10
         for (int j = 0; j < COLUNAS; j++) {
             printf("%d ", tabuleiro[i][j]);
         }
